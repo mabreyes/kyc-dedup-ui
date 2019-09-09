@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card text-white bg-dark" style="margin-bottom: 1em;">
+        <div class="card-header">Complete user list</div>
+        <div class="card-body">
+          <h1 class="card-title"><strong>User List</strong></h1>
+          <h5 class="card-text">Complete user list and duplication issues</h5>
+        </div>
+      </div>
+      <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Mobile Number</th>
+                <th scope="col">Complete Name</th>
+                <th scope="col">Date Registered</th>
+                <th scope="col">Has Duplicate</th>
+                <th scope="col" colspan="2">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">{ jarvis.person_info.wallet.0 }</th>
+                <td>{ jarvis.first_name } { jarvis.last_name }</td>
+                <td>{ jarvis.person_info.date }</td>
+                <td>Yes</td>
+                <td><a href="" class="btn btn-md btn-primary">View</a></td>
+                <td><a href="" class="btn btn-md btn-danger">Remove</a></td>
+              </tr>
+              <tr>
+                    <th scope="row">{ jarvis.person_info.wallet.1 }</th>
+                    <td>{ jarvis.first_name } { jarvis.last_name }</td>
+                    <td>{ jarvis.person_info.date }</td>
+                    <td>No</td>
+                    <td><a href="" class="btn btn-md btn-primary">View</a></td>
+                    <td><a href="" class="btn btn-md btn-danger">Remove</a></td>
+                  </tr>
+                  <tr>
+                        <th scope="row">{ jarvis.person_info.wallet.2 }</th>
+                        <td>{ jarvis.first_name } { jarvis.last_name }</td>
+                        <td>{ jarvis.person_info.date }</td>
+                        <td>No</td>
+                        <td><a href="" class="btn btn-md btn-primary">View</a></td>
+                        <td><a href="" class="btn btn-md btn-danger">Remove</a></td>
+                      </tr>
+                      <tr>
+                            <th scope="row">{ jarvis.person_info.wallet.3 }</th>
+                            <td>{ jarvis.first_name } { jarvis.last_name }</td>
+                            <td>{ jarvis.person_info.date }</td>
+                            <td>No</td>
+                            <td><a href="" class="btn btn-md btn-primary">View</a></td>
+                            <td><a href="" class="btn btn-md btn-danger">Remove</a></td>
+                          </tr>
+                          <tr>
+                                <th scope="row">{ jarvis.person_info.wallet.4 }</th>
+                                <td>{ jarvis.first_name } { jarvis.last_name }</td>
+                                <td>{ jarvis.person_info.date }</td>
+                                <td>No</td>
+                                <td><a href="" class="btn btn-md btn-primary">View</a></td>
+                                <td><a href="" class="btn btn-md btn-danger">Remove</a></td>
+                              </tr>
+                              <tr>
+                                    <th scope="row">{ jarvis.person_info.wallet.5 }</th>
+                                    <td>{ jarvis.first_name } { jarvis.last_name }</td>
+                                    <td>{ jarvis.person_info.date }</td>
+                                    <td>No</td>
+                                    <td><a href="" class="btn btn-md btn-primary">View</a></td>
+                                    <td><a href="" class="btn btn-md btn-danger">Remove</a></td>
+                                  </tr>
+                                  <tr>
+                                        <th scope="row">{ jarvis.person_info.wallet.6 }</th>
+                                        <td>{ jarvis.first_name } { jarvis.last_name }</td>
+                                        <td>{ jarvis.person_info.date }</td>
+                                        <td>No</td>
+                                        <td><a href="" class="btn btn-md btn-primary">View</a></td>
+                                        <td><a href="" class="btn btn-md btn-danger">Remove</a></td>
+                                      </tr>
+            </tbody>
+          </table>
+{% endblock %}

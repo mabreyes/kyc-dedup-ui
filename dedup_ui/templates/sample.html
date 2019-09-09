@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="card text-white bg-dark" style="margin-bottom: 1em;">
+        <div class="card-header">Check Duplicate</div>
+        <div class="card-body">
+          <h1 class="card-title">{ jarvis.first_name }</h1>
+          <h5 class="card-text">{ jarvis.last_name }</h5>
+        </div>
+      </div>
+<div class="row">
+    <div class="col sm-6">
+            <div class="card">
+                    <img src="{% static 'images/unknown_icon.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                            <h3 class="card-title"><strong>{ jarvis.first_name }, { jarvis.last_name }</strong></h3>
+                            <p class="card-text">{ jarvis.person_info.desc|trunc '5' }</p>
+                          </div>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Registered on: { jarvis.person_info.date }</li>
+                            <li class="list-group-item">Address: { jarvis.person_info.address }</li>
+                            <li class="list-group-item">Age: { jarvis.person_info.age }</li>
+                          </ul>
+                          <div class="card-body">
+                            <a href="#" class="btn btn-lg btn-primary card-link">Duplicate</a>
+                            <a href="#" class="btn btn-lg btn-danger card-link">Not duplicate</a>
+                          </div>
+                  </div>
+    </div>
+    <div class="col sm-6">
+            <div class="card">
+                    <img src="{% static 'images/unknown_icon.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                            <h3 class="card-title"><strong>{ jarvis.first_name }, { jarvis.last_name }</strong></h3>
+                            <p class="card-text">{ jarvis.person_info.desc|trunc '5' }</p>
+                          </div>
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Registered on: { jarvis.person_info.date }</li>
+                            <li class="list-group-item">Address: { jarvis.person_info.address }</li>
+                            <li class="list-group-item">Age: { jarvis.person_info.age }</li>
+                          </ul>
+                          <div class="card-body">
+                                <a href="#" class="btn btn-lg btn-primary card-link">Duplicate</a>
+                                <a href="#" class="btn btn-lg btn-danger card-link">Not duplicate</a>
+                          </div>
+                  </div>
+    </div>
+</div>
+{% endblock %}
